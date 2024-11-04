@@ -4,10 +4,15 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';  
 import PhoneIcon from '@mui/icons-material/Phone';  
 import ContactForm from '../../components/contactform/contactform';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {  
   return (  
     <>
+    <Helmet>
+        <title>Contact - My React App</title>
+        <meta name="description" content="This is the home page of my React application." />
+      </Helmet>
     <Grid container spacing={2} justifyContent="center" style={{ padding: '20px' }}>  
       <Grid item xs={12} sm={4}>  
         <Card variant="outlined" style={{ textAlign: 'center', padding: '20px' }}>  

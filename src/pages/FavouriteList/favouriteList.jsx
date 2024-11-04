@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Grid from '@mui/material/Grid2';
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet"
 
 function FavList() {
     const [favorites, setFavorites] = useState([]);
@@ -16,6 +16,10 @@ function FavList() {
 
     return ( 
         <>
+        <Helmet>
+            <title>Favourite - My React App</title>
+            <meta name="description" content="This is the home page of my React application." />
+        </Helmet>
         <h2 className="text-3xl border-b-2 pb-2 mb-5 border-slate-700">Favourite Movies</h2>
         <Grid container spacing={2}>
         {favorites && favorites.length>0 && favorites.map((movie, index) => {

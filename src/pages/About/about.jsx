@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 
 
 
@@ -5,6 +6,10 @@ const About = () => {
     
     return (
         <>
+        <Helmet>
+        <title>About - My React App</title>
+        <meta name="description" content="This is the home page of my React application." />
+      </Helmet>
          <h2>About us page</h2>
          <p  style={{ lineHeight: '100px' }}>Lorem ipsum odor amet, consectetuer adipiscing elit. Gravida phasellus maecenas nibh augue convallis efficitur sit. Adipiscing malesuada urna turpis taciti; quisque facilisi hac. Non feugiat rutrum turpis massa gravida inceptos lectus fames. Sociosqu aenean sem scelerisque dis mattis vulputate adipiscing. Dictum convallis dignissim litora suscipit duis fringilla donec. Urna libero felis magna vitae ante torquent. Facilisi massa dapibus fermentum etiam sit dui ridiculus.
 

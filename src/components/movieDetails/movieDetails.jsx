@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { movieInstance } from './../../API/api';
+import { Helmet } from 'react-helmet';
 
 function MovieDetail() {
     const { id } = useParams();
@@ -30,7 +31,12 @@ function MovieDetail() {
     if (error) return <p>Error: {error}</p>;
 
     return (
-        <div className='px-2'>
+      <>
+       <Helmet>
+        <title>{movie.title} - My React App</title>
+        <meta name="description" content={`Details and information about ${movie.title}`} />
+      </Helmet>
+      <div className='px-2'>
             {movie && (
                 <>
                 <div className='flex justify-center'>
@@ -135,6 +141,8 @@ function MovieDetail() {
                 </>
             )}
         </div>
+      </>
+      
     );
 }
 

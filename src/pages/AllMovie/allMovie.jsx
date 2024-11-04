@@ -12,6 +12,7 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { Link } from 'react-router-dom';
 import useHooks from '../../hook/useHooks';
+import { Helmet } from 'react-helmet';
 
 function AllMovie() {
   const { results=[] } = useHooks('/discover/movie');
@@ -57,6 +58,10 @@ function AllMovie() {
 
   return (
     <>
+    <Helmet>
+        <title>Movies - My React App</title>
+        <meta name="description" content="This is the home page of my React application." />
+      </Helmet>
       <div className="filter-div">
         <div className="search-form flex align-middle">
         <div className="search-movie">
