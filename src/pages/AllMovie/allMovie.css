@@ -1,0 +1,12 @@
+.genres fieldset, 
+.search-movie fieldset {
+    border-color: #fff;
+}
+.search-movie label,
+.search-movie svg,
+.search-movie input,
+.genres  #genre-select,
+.genres  svg,
+.genres label {
+    color: #fff;
+}

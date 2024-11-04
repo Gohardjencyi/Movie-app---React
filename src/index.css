@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.content-section {
+    background-color: black;
+    color: #fff;
+}
